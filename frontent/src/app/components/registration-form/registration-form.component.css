@@ -1,0 +1,12 @@
+.registration-container {
+    width: 80%;
+    margin: 20px 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  div {
+    margin-bottom: 10px;
+  }
+  

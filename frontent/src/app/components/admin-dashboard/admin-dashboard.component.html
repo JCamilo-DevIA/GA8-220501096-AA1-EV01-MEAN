@@ -1,0 +1,14 @@
+<!-- src/app/components/admin-dashboard/admin-dashboard.component.html -->
+
+<div class="container">
+    <h2>Admin Dashboard</h2>
+    <a routerLink="/admin/add-product" class="btn btn-primary mb-3">Add Product</a>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let product of products">
+        {{ product.name }} - ${{ product.price }}
+        <a [routerLink]="['/admin/edit-product', product._id]" class="btn btn-secondary btn-sm float-right ml-2">Edit</a>
+        <button (click)="deleteProduct(product._id!)" class="btn btn-danger btn-sm float-right">Delete</button>
+      </li>
+    </ul>
+  </div>
+  

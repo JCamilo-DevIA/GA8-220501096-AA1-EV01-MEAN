@@ -1,0 +1,11 @@
+<!-- src/app/components/order-status/order-status.component.html -->
+
+<div class="container">
+    <h2>Order Status</h2>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let order of orders">
+        Order #{{ order._id }} - {{ order.status }}
+      </li>
+    </ul>
+  </div>
+  

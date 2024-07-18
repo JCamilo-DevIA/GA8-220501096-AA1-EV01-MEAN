@@ -1,0 +1,10 @@
+.catalog-container {
+    width: 80%;
+    margin: 20px 0;
+  }
+  .product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
